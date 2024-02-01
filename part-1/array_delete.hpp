@@ -9,6 +9,10 @@ template <typename T>
 void array_delete(std::vector<T> &A, std::size_t index)
 {
     // WRITE YOUR CODE HERE
+    if (index < A.size()) {
+        // Erase the element at the given index
+        A.erase(A.begin() + index);
+    }
 }
 
 #endif // __array_delete__
